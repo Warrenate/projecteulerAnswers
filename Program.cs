@@ -9,7 +9,11 @@ namespace projecteulerAnswers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(UtilityAnswers.GetMultiplesOf3Or5());
+            //Console.WriteLine(Problem1.GetMultiplesOf3Or5());
+            //Console.WriteLine(Problem1.GetMultiplesOf3Or5Ext1());
+
+            //Console.WriteLine(Problem2.GetFabValueOf(50)); //too slow
+            Console.WriteLine(Problem2.GetEvenTermSumOfFibonacciIn(4000000));
         }
     }
 }
