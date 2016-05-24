@@ -60,5 +60,64 @@ namespace projecteulerAnswers
             string newStr = new string(tempArr);
             return newStr == numToStr;
         }
+
+        public static ulong GetLargestPalindromeProductOfTwoNumInDigitsOfExt1(byte digits, out ulong factor1, out ulong factor2)
+        {
+            factor1 = factor2 = 0;
+            if (digits == 1)
+            {
+                return 0;
+            }
+            ulong minNum = (ulong)Math.Pow(10, digits - 1);
+            ulong maxNum = minNum * 10;
+            ulong result = 0;
+            ulong tempResult;
+            ulong step;
+            ulong i, j;
+            for (i = maxNum - 1; i > minNum; i--)
+            {
+                if (i % 11 == 0)
+                {
+                    j = maxNum - 1;
+                    step = 1;
+                }
+                else
+                {
+                    j = GetLargestNum(digits, 11);
+                    step = 11;
+                }
+                for (; j >= i; j -= step)
+                {
+                    tempResult = i * j;
+                    if (result >= tempResult)
+                        break;
+                    if (IsPalindromeNumber(tempResult))
+                    {
+                        result = tempResult;
+                        factor1 = j;
+                        factor2 = i;
+                    }
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// get the largest number contain specified divisor and digit count
+        /// </summary>
+        /// <param name="digits">digit count</param>
+        /// <param name="containFactor">contain factor</param>
+        /// <returns></returns>
+        public static ulong GetLargestNum(byte digits, ulong containFactor)
+        {
+            ulong maxNum = (ulong)Math.Pow(10, digits) - 1;
+            while (maxNum > 0)
+            {
+                if (maxNum % containFactor == 0)
+                    return maxNum;
+                maxNum--;
+            }
+            return 0;
+        }
     }
 }

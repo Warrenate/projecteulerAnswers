@@ -20,6 +20,7 @@ namespace projecteulerAnswers
             ulong factor1;
             ulong factor2;
             Console.WriteLine("{0} = {1} * {2}", Problem4.GetLargestPalindromeProductOfTwoNumInDigitsOf(3, out factor1, out factor2), factor1, factor2);
+            Console.WriteLine("{0} = {1} * {2}", Problem4.GetLargestPalindromeProductOfTwoNumInDigitsOfExt1(3, out factor1, out factor2), factor1, factor2);
             Console.WriteLine(Problem4.GetLargestPalindromeProductOfTwoNumInDigitsOf(3));
         }
     }
