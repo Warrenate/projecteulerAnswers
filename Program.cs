@@ -23,7 +23,10 @@ namespace projecteulerAnswers
             //Console.WriteLine("{0} = {1} * {2}", Problem4.GetLargestPalindromeProductOfTwoNumInDigitsOfExt1(3, out factor1, out factor2), factor1, factor2);
             //Console.WriteLine(Problem4.GetLargestPalindromeProductOfTwoNumInDigitsOf(3));
 
-            Console.WriteLine(Problem5.GetLCMOfEachNumberIn(20));
+            //Console.WriteLine(Problem5.GetLCMOfEachNumberIn(20));
+
+            ulong num = 100;
+            Console.WriteLine("square of sum - sum of square in {0} is {1}", num, Problem6.GetSquareOfSumOfEachNumberIn(num) - Problem6.GetSumOfSquareOfEachNumberIn(num));
         }
     }
 }
