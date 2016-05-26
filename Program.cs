@@ -25,8 +25,10 @@ namespace projecteulerAnswers
 
             //Console.WriteLine(Problem5.GetLCMOfEachNumberIn(20));
 
-            ulong num = 100;
-            Console.WriteLine("square of sum - sum of square in {0} is {1}", num, Problem6.GetSquareOfSumOfEachNumberIn(num) - Problem6.GetSumOfSquareOfEachNumberIn(num));
+            //ulong num = 100;
+            //Console.WriteLine("square of sum - sum of square in {0} is {1}", num, Problem6.GetSquareOfSumOfEachNumberIn(num) - Problem6.GetSumOfSquareOfEachNumberIn(num));
+
+            Console.WriteLine(Problem7.GetPrimeInIndexOf(10001));
         }
     }
 }
