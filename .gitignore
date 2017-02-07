@@ -1,4 +1,5 @@
-/bin
-/obj
+projecteulerAnswers/bin/
+projecteulerAnswers/obj/
 *.userprefs
 *.suo
+*.user
