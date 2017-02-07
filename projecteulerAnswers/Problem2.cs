@@ -8,7 +8,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// //2. Even Fibonacci numbers https://projecteuler.net/problem=2
     /// </summary>
-    class Problem2
+    public class Problem2
     {
         /// <summary>
         /// by myself. heavy computation.
