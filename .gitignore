@@ -1,5 +1,5 @@
-projecteulerAnswers/bin/
-projecteulerAnswers/obj/
+bin/
+obj/
 *.userprefs
 *.suo
 *.user

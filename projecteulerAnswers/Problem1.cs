@@ -8,7 +8,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// 1. Multiples of 3 and 5 https://projecteuler.net/problem=1
     /// </summary>
-    class Problem1
+    public class Problem1
     {
         /// <summary>
         /// by myself
