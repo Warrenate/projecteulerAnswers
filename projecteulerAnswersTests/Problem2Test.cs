@@ -33,8 +33,8 @@ namespace projecteulerAnswersTests
         [TestMethod]
         public void GetEvenTermSumOfFibonacciIn()
         {
-            var expected = 44UL;
-            var actual = Problem2.GetEvenTermSumOfFibonacciIn(34);
+            var expected = 4613732UL;
+            var actual = Problem2.GetEvenTermSumOfFibonacciIn(4000000);
             Assert.AreEqual(expected, actual);
         }
     }
