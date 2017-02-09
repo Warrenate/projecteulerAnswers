@@ -8,7 +8,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// 4. Largest palindrome product https://projecteuler.net/problem=4
     /// </summary>
-    class Problem4
+    public class Problem4
     {
         /// <summary>
         /// get the largest palindrome product of two same digit nums(inefficient).
