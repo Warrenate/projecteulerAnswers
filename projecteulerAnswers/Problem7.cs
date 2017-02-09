@@ -8,7 +8,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// 7. 10001st prime https://projecteuler.net/problem=7
     /// </summary>
-    class Problem7
+    public class Problem7
     {
         public static ulong GetPrimeInIndexOf(ushort index)
         {
