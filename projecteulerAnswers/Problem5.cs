@@ -8,7 +8,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// 5. Smallest multiple https://projecteuler.net/problem=5
     /// </summary>
-    class Problem5
+    public class Problem5
     {
         /// <summary>
         /// get the greatest common divisor of two number
