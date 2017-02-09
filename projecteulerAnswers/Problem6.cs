@@ -9,7 +9,7 @@ namespace projecteulerAnswers
     /// <summary>
     /// 6. Sum square difference https://projecteuler.net/problem=6
     /// </summary>
-    class Problem6
+    public class Problem6
     {
         public static ulong GetSumOfEachNumberIn(ulong maxNum)
         {
